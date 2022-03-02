@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">E-Borrow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pay_now"><u>PAYNOW</u></string>
+
+    <string name="library_procedure">\t\t\t\t\t\t\t\t\tThis app helps you to borrow,return and share your book to the library.After confirming borrow the book will reach you within 24hours,After confirming return the nearby book collector will reach you within 3 hours and collects the book similar format of return will be applied for donating the book too.</string>
+    <string name="library_rules">  \t\t\t i)Maximum Borrow limit : 4\n\n\t\t\t\t ii)Duplicate Copy of Borrowed Books not allowed\n\n\t\t\t\t iii) Fine Amount Rs.10 per day will be constantly increased after Return Date\n\n\t\t\t\t iv)Fined books can be returned only after paying due Amount</string>
+    <string name="book_name">Book Name</string>
+    <string name="author">Author</string>
+    <string name="subject">Subject</string>
+    <string name="textview">TextView</string>
+    <string name="borrowed_date">Borrowed Date</string>
+    <string name="returned_date">Returned Date</string>
+    <string name="due_amount">Due Amount</string>
+    <string name="return_button">RETURN</string>
+    <string name="semicolon">:</string>
+    <string name="borrow_button">BORROW</string>
+    <string name="currently_in_use">CURRENTLY IN USE!!!!</string>
+    <string name="no_of_borrows">No of borrows</string>
+    <string name="zero">0</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="no_due_books">No Due Books at Present</string>
+    <string name="get_back">getBack</string>
+    <string name="pages">Pages</string>
+    <string name="academics">Academics</string>
+    <string name="author_name">Author Name</string>
+    <string name="subject_with_colon">Subject :</string>
+    <string name="available_copies">Available Copies</string>
+    <string name="success_borrow">YOUR BOOK HAS BEEN SUCCESSFULLY BORROWED</string>
+    <string name="borrow_date">Borrow Date</string>
+    <string name="return_date">Return Date</string>
+    <string name="ok">OK</string>
+    <string name="no_books">No books has been borrowed at Present</string>
+    <string name="non_academics">Non Academics</string>
+    <string name="shared_books">Shared Books</string>
+    <string name="no_shared_books">Currently No Books Has Been Shared by others</string>
+    <string name="require_password">Require Password for verification</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="name">Name</string>
+    <string name="district">District</string>
+    <string name="update_button">update</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="door_no">Door No</string>
+    <string name="landmark">Landmark</string>
+    <string name="street_village">Street/Village</string>
+    <string name="pincode">Pincode</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_number">Change Number</string>
+    <string name="no_favorites">No Favorites yet!! Add up Quickly</string>
+    <string name="procedure">Procedure :</string>
+    <string name="rules">Rules :</string>
+    <string name="e_borrow">E-Borrow</string>
+    <string name="instructions">Instructions</string>
+    <string name="borrowed_books_home">BORROWED BOOKS</string>
+    <string name="due_books_home">DUE BOOKS</string>
+    <string name="shared_books_home">SHARED BOOKS</string>
+    <string name="favourite_books_home">FAVOURITE BOOKS</string>
+    <string name="see_all_books">SEE ALL BOOKS</string>
+    <string name="mostly_borrowed_home">MOSTLY BORROWED</string>
+    <string name="a_book_day_keeps_reality_away">A BOOK CAN KEEP REALITY AWAY</string>
+    <string name="borrow_home">BORROW</string>
+    <string name="return_home">RETURN</string>
+    <string name="share_home">SHARE</string>
+    <string name="no_due_at_present">NO DUE AT PRESENT</string>
+    <string name="balance_due_amount">BALANCE DUE AMOUNT :</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="login">Login</string>
+    <string name="no_due">No Due :)</string>
+    <string name="dont_have_account">If you don\'t have account then</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="login_header">Login to Enjoy the Book feast!!! Don\'t Miss Out!!!</string>
+    <string name="new_mobile_header">Enter your New Mobile No</string>
+    <string name="new_mobile_no">New Mobile No</string>
+    <string name="new_password_header">SET NEW PASSWORD</string>
+    <string name="set_password">Set Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="pay_due_header">PAY THE DUE AMOUNT BEFORE RETURNING THE BOOK</string>
+    <string name="extra_days">Extra Days</string>
+    <string name="cancel_button">CANCEL</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="pay_due_button">PAY DUE</string>
+    <string name="borrowed">Borrowed</string>
+    <string name="shared">Shared</string>
+    <string name="due_book">Due Book</string>
+    <string name="due_amount_semi_colon">Due Amount :</string>
+    <string name="favourites_semi_colon">Favourites :</string>
+    <string name="your_activity">Your Activity</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit">Edit</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="start_search">Start search and find your need : )</string>
+    <string name="no_of_pages">No Of Pages</string>
+    <string name="info">Info</string>
+    <string name="register">Register</string>
+    <string name="shared_details_header">YOUR BOOK HAS BEEN SUCCESSFULLY SHARED</string>
+    <string name="sorry_you_have_shared_no_books_to_the_library">Sorry,you have shared no books to the library</string>
+    <string name="sign_up_header">You are one step away from being our member!!!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="start">Start</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string-array name="Subjects">
+        <item>Maths</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Computer</item>
+        <item>Tales</item>
+        <item>Horror</item>
+        <item>History</item>
+        <item>Devotional</item>
+        <item>Comics</item>
+    </string-array>
+
+    <string-array name="districts">
+        <item>Ariyalur</item>
+        <item>Chengalpattu</item>
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Cuddalore</item>
+        <item>Dharmapuri</item>
+        <item>Dindigul</item>
+        <item>Erode</item>
+        <item>Kallakurichi</item>
+        <item>Kanchipuram</item>
+        <item>Kanyakumari</item>
+        <item>Karur</item>
+        <item>Krishnagiri</item>
+        <item>Madurai</item>
+        <item>Mayiladuthurai</item>
+        <item>Nagapattinam</item>
+        <item>Namakkal</item>
+        <item>Nilgiris</item>
+        <item>Perambalur</item>
+        <item>Pudukkottai</item>
+        <item>Ramanathapuram</item>
+        <item>Ranipet</item>
+        <item>Salem</item>
+        <item>Sivagangai</item>
+        <item>Tenkasi</item>
+        <item>Thanjavur</item>
+        <item>Theni</item>
+        <item>Thoothukudi</item>
+        <item>Tiruchirappalli</item>
+        <item>Tirunelveli</item>
+        <item>Tirupattur</item>
+        <item>Tiruppur</item>
+        <item>Tiruvallur</item>
+        <item>Tiruvannamalai</item>
+        <item>Tiruvarur</item>
+        <item>Vellore</item>
+        <item>Viluppuram</item>
+        <item>Virudhunagar</item>
+    </string-array>
+</resources>

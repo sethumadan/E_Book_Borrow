@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.libraryapplication.ui.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home2_to_allBooks"
+            app:destination="@id/bookList"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_home2_to_category"
+            app:destination="@id/category"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_home2_to_borrowedBooksFragment"
+            app:destination="@id/borrowedBooksFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_home2_to_sharedBooksFragment"
+            app:destination="@id/sharedBooksFragment" />
+        <action
+            android:id="@+id/action_home2_to_mostlyBorrowedFragment"
+            app:destination="@id/mostlyBorrowedFragment" />
+        <action
+            android:id="@+id/action_home2_to_favoriteBooksFragment"
+            app:destination="@id/favoriteBooksFragment" />
+        <action
+            android:id="@+id/action_home2_to_shareBookFragment"
+            app:destination="@id/shareBookFragment" />
+        <action
+            android:id="@+id/action_home2_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home2_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home2_to_searchFragment"
+            app:destination="@id/searchFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.libraryapplication.ui.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profile_to_editDetailsFragment"
+            app:destination="@id/editDetailsFragment" />
+        <action
+            android:id="@+id/action_profile_to_borrowedBooksFragment2"
+            app:destination="@id/borrowedBooksFragment" />
+        <action
+            android:id="@+id/action_profile_to_favoriteBooksFragment"
+            app:destination="@id/favoriteBooksFragment" />
+        <action
+            android:id="@+id/action_profile_to_sharedBooksFragment"
+            app:destination="@id/sharedBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/category"
+        android:name="com.example.libraryapplication.ui.fragments.CategoryFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_search_to_subjectFragment"
+            app:destination="@id/subjectFragment" />
+        <action
+            android:id="@+id/action_category_to_allBooks"
+            app:destination="@id/bookList" />
+        <action
+            android:id="@+id/action_category_to_bookInfo"
+            app:destination="@id/bookInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookList"
+        android:name="com.example.libraryapplication.ui.fragments.BookListFragment"
+        android:label="Book List"
+        tools:layout="@layout/fragment_book_list">
+        <action
+            android:id="@+id/action_allBooks_to_bookInfo2"
+            app:destination="@id/bookInfo" />
+        <argument
+            android:name="subject"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/bookInfo"
+        android:name="com.example.libraryapplication.ui.fragments.BookInfoFragment"
+        android:label="Book Info"
+        tools:layout="@layout/fragment_book_info">
+        <argument
+            android:name="book"
+            app:argType="com.example.libraryapplication.data.entities.Book" />
+        <action
+            android:id="@+id/action_bookInfo_to_borrowDetailFragment"
+            app:destination="@id/borrowDetailFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/subjectFragment"
+        android:name="com.example.libraryapplication.ui.fragments.SubjectFragment"
+        android:label="Category Specific"
+        tools:layout="@layout/fragment_subject">
+        <action
+            android:id="@+id/action_subjectFragment_to_bookInfo"
+            app:destination="@id/bookInfo" />
+        <argument
+            android:name="section"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_subjectFragment_to_allBooks"
+            app:destination="@id/bookList" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.libraryapplication.ui.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.libraryapplication.ui.fragments.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/borrowDetailFragment"
+        android:name="com.example.libraryapplication.ui.fragments.BorrowDetailFragment"
+        android:label="BorrowDetail"
+        tools:layout="@layout/fragment_borrow_details">
+        <argument
+            android:name="BorrowDetail"
+            app:argType="com.example.libraryapplication.data.entities.BorrowDetail" />
+        <action
+            android:id="@+id/action_borrowDetailFragment_to_home2"
+            app:destination="@id/home2"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/home2" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/borrowedBooksFragment"
+        android:name="com.example.libraryapplication.ui.fragments.BorrowedBooksFragment"
+        android:label="Borrowed Books"
+        tools:layout="@layout/fragment_borrowed_books">
+        <!--   <argument
+               android:name="borrowDetails"
+               app:argType="com.example.libraryapplication.data.entities.BorrowDetail[]" />
+     -->
+        <action
+            android:id="@+id/action_borrowedBooksFragment_to_returnFragment"
+            app:destination="@id/returnFragment" />
+        <argument
+            android:name="Title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_borrowedBooksFragment_to_payDueFragment"
+            app:destination="@id/payDueFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/payDueFragment"
+        android:name="com.example.libraryapplication.ui.fragments.PayDueFragment"
+        android:label="Due"
+        tools:layout="@layout/fragment_pay_due">
+        <argument
+            android:name="BorrowDetail"
+            app:argType="com.example.libraryapplication.data.entities.BorrowDetail" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+        <argument
+            android:name="extraDays"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_payDueFragment_to_returnFragment"
+            app:destination="@id/returnFragment" />
+        <action
+            android:id="@+id/action_payDueFragment_to_home2"
+            app:destination="@id/home2"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/home2" />
+        <argument
+            android:name="navigatedFrom"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_payDueFragment_to_borrowedBooksFragment"
+            app:destination="@id/borrowedBooksFragment" />
+
+    </dialog>
+    <fragment
+        android:id="@+id/returnFragment"
+        android:name="com.example.libraryapplication.ui.fragments.ReturnDetailsFragment"
+        android:label="Borrow Detail"
+        tools:layout="@layout/fragment_return">
+        <argument
+            android:name="BorrowDetail"
+            app:argType="com.example.libraryapplication.data.entities.BorrowDetail" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+        <argument
+            android:name="extraDays"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_returnFragment_to_payDueFragment"
+            app:destination="@id/payDueFragment" />
+        <action
+            android:id="@+id/action_returnFragment_to_home22"
+            app:destination="@id/home2"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedBooksFragment"
+        android:name="com.example.libraryapplication.ui.fragments.SharedBooksFragment"
+        android:label="Shared Books"
+        tools:layout="@layout/fragment_shared_books">
+        <action
+            android:id="@+id/action_sharedBooksFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostlyBorrowedFragment"
+        android:name="com.example.libraryapplication.ui.fragments.MostBorrowedBooksFragment"
+        android:label="People's Choice"
+        tools:layout="@layout/fragment_mostly_borrowed">
+        <action
+            android:id="@+id/action_mostlyBorrowedFragment_to_bookInfo"
+            app:destination="@id/bookInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteBooksFragment"
+        android:name="com.example.libraryapplication.ui.fragments.FavoriteBooksFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite_books">
+        <action
+            android:id="@+id/action_favoriteBooksFragment_to_bookInfo"
+            app:destination="@id/bookInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/shareBookFragment"
+        android:name="com.example.libraryapplication.ui.fragments.ShareBookFragment"
+        android:label="Share a Book"
+        tools:layout="@layout/fragment_share_book">
+        <action
+            android:id="@+id/action_shareBookFragment_to_shareBookDetailFragment"
+            app:destination="@id/shareBookDetailFragment"
+            app:popUpTo="@id/home2" />
+    </fragment>
+    <dialog
+        android:id="@+id/shareBookDetailFragment"
+        android:name="com.example.libraryapplication.ui.fragments.ShareBookDetailFragment"
+        android:label="Shared Book Detail"
+        tools:layout="@layout/fragment_share_book_detail">
+        <argument
+            android:name="bookId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_shareBookDetailFragment_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/home2" />
+    </dialog>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.libraryapplication.ui.fragments.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/editDetailsFragment"
+        android:name="com.example.libraryapplication.ui.fragments.EditDetailsFragment"
+        android:label="Edit Details"
+        tools:layout="@layout/fragment_edit_details">
+        <action
+            android:id="@+id/action_editDetailsFragment_to_confirmPasswordFragment"
+            app:destination="@id/confirmPasswordFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/confirmPasswordFragment"
+        android:name="com.example.libraryapplication.ui.fragments.ConfirmPasswordFragment"
+        android:label="Confirm Password"
+        tools:layout="@layout/fragment_comfirm_password">
+        <argument
+            android:name="changeType"
+            app:argType="com.example.libraryapplication.ui.fragments.args.ChangeType" />
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment"
+            app:popUpTo="@id/confirmPasswordFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_newMobileNoFragment"
+            app:destination="@id/newMobileNoFragment"
+            app:popUpTo="@id/confirmPasswordFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_editDetailsFragment"
+            app:destination="@id/editDetailsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/newMobileNoFragment"
+        android:name="com.example.libraryapplication.ui.fragments.NewMobileNoFragment"
+        android:label="Change No"
+        tools:layout="@layout/fragment_new_mobile_no">
+        <action
+            android:id="@+id/action_newMobileNoFragment_to_editDetailsFragment"
+            app:destination="@id/editDetailsFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.libraryapplication.ui.fragments.NewPasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_new_password">
+        <action
+            android:id="@+id/action_newPasswordFragment_to_editDetailsFragment"
+            app:destination="@id/editDetailsFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.libraryapplication.ui.fragments.SearchFragment"
+        android:label="Search Books"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_bookInfo"
+            app:destination="@id/bookInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.libraryapplication.ui.fragments.HelpFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_help" />
+
+</navigation>

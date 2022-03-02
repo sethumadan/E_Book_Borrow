@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable-night/drawable.xml" value="0.2465" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/bottom_nav_color_tint.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/bottomnavcolortint.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/favorite_button.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/home_icon.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_arrow_drop_up_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_category_24.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.163" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.18" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_currency_rupee_24.xml" value="0.188" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.18" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_double_arrow_24.xml" value="0.188" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_library_books_24.xml" value="0.188" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_local_library_24.xml" value="0.163" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_lock_open_24.xml" value="0.2425" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.2425" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_phonelink_setup_24.xml" value="0.2425" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.18" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/drawable/logout.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/font/alfa_slab_one.xml" value="0.284375" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/font/arbutus.xml" value="0.284375" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/font/asset.xml" value="0.284375" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/font/bangers.xml" value="0.284375" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/font/bungee_outline.xml" value="0.284375" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/font/erica_one.xml" value="0.284375" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/activity_login.xml" value="0.13949275362318841" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/activity_login2.xml" value="0.13949275362318841" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_academics.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_all_books.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_available_books.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_borrowed_books.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_categories.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_category.xml" value="0.1" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_due_books.xml" value="0.536" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_most_borrowed.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_search_drop_down.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_shared_book.xml" value="0.4967213114754098" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_subject.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/card_subjects.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/content_login.xml" value="0.13949275362318841" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/drop_down_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/favorite_icon.xml" value="0.213768115942029" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_all_books.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_available_books.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_blank.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_book_info.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_book_list.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_borrow_details.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_borrowed_books.xml" value="0.176" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_category.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_comfirm_password.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_detailed_subject.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_due_books.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_edit_details.xml" value="0.176" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_favorite_books.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_first.xml" value="0.13949275362318841" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_full_view_subject.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_help.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_mostly_borrowed.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_new_mobile_no.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_new_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_pay_due.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_return.xml" value="0.536" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_search.xml" value="0.3161131611316113" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_second.xml" value="0.13949275362318841" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_share_book.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_share_book_detail.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_share_book_to_library.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_shared_books.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_subject.xml" value="0.4" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/fragment_welcome.xml" value="0.2" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/provider_paths.xml" value="0.10104166666666667" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/layout/subject_drop_down.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/menu/bottom_navigation.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/menu/favorite.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/menu/favorites.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/menu/over_flow_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/menu/search.xml" value="0.17291666666666666" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/sethu-pt4307/AndroidStudioProjects/LibraryApplication/app/src/main/res/xml/provider_paths.xml" value="0.10104166666666667" />
+        <entry key="..\:/Users/sethu-pt4307/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_dropdown_item_1line.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dialog_back_ground"
+            tools:context=".ui.fragments.BorrowDetailFragment">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/success_borrow"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/borrow_daeatils_book_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/book_name"
+                android:textColor="@color/primary_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/borrow_details_book_name_given"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxLines="2"
+                android:text="@string/book_name"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/borrow_daeatils_book_name" />
+
+            <TextView
+                android:id="@+id/borrow_details_borrow_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/borrow_date"
+                android:textColor="@color/primary_text"
+                app:layout_constraintStart_toStartOf="@+id/borrow_daeatils_book_name"
+                app:layout_constraintTop_toBottomOf="@+id/borrow_daeatils_book_name" />
+
+            <TextView
+                android:id="@+id/borrow_date_borrowdetails_given"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/borrow_date"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/borrow_details_borrow_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/borrow_details_book_name_given"
+                app:layout_constraintTop_toTopOf="@+id/borrow_details_borrow_date"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/borrow_details_return_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/return_date"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toEndOf="@+id/borrow_details_borrow_date"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/borrow_details_borrow_date"
+                app:layout_constraintTop_toBottomOf="@+id/borrow_details_borrow_date" />
+
+            <TextView
+                android:id="@+id/return_date_borrowdetails_given"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/return_date"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/borrow_date_borrowdetails_given"
+                app:layout_constraintTop_toTopOf="@+id/borrow_details_return_date" />
+
+            <Button
+                android:id="@+id/share_book_detail_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="108dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ok"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/borrow_details_return_date" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:text="@string/semicolon"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/borrow_details_book_name_given"
+                app:layout_constraintStart_toEndOf="@+id/borrow_daeatils_book_name"
+                app:layout_constraintTop_toTopOf="@+id/borrow_details_book_name_given"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/semicolon"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/borrow_date_borrowdetails_given"
+                app:layout_constraintEnd_toEndOf="@+id/textView22"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/borrow_date_borrowdetails_given" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/semicolon"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/return_date_borrowdetails_given"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toTopOf="@+id/return_date_borrowdetails_given" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:background="@color/dialog_back_ground"
+            tools:context=".ui.fragments.NewMobileNoFragment">
+
+            <TextView
+                android:id="@+id/new_mob_no_header"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:text="@string/new_mobile_header"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/new_mob_no_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/new_mobile_no"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:endIconTint="@color/backgroundGrey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/new_mob_no_header">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_mob_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="56dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/new_mob_no_cancel"
+                android:layout_width="149dp"
+                android:layout_height="40dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/new_mob_no_confirm"
+                android:layout_width="149dp"
+                android:layout_height="40dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

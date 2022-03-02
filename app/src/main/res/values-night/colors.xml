@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text">#FFFFFFFF</color>
+    <color name="background">#E6020102</color>
+    <color name="card_back_ground">#85FFFFFF</color>
+    <color name="bottom_navigation_color">@color/black</color>
+    <color name="pay_now">@color/white</color>
+    <color name="dialog_back_ground">@color/mediumGrey</color>
+    <color name="profile_card_back_ground">@color/blackishBrown</color>
+    <color name="hint_color">@color/backgroundGrey</color>
+    <color name="card_background_text">@color/redRose</color>
+    <color name="card_background_text_details">@color/mediumGrey</color>
+    <color name="no_of_borrows_color">@color/mildPink</color>
+    <color name="primary">#EA3224</color>
+    <color name="bottom_icon">@color/white</color>
+    <item name="startSearch" type="drawable">@drawable/searchnight</item>
+
+</resources>

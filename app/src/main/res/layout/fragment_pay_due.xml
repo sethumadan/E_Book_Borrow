@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_back_ground"
+            tools:context=".ui.fragments.BorrowDetailFragment">
+
+            <TextView
+                android:id="@+id/pay_due_textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/pay_due_header"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pay_due_book_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/book_name"
+                android:textColor="@color/primary_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pay_due_textView3" />
+
+            <TextView
+                android:id="@+id/pay_due_borrow_details_book_name_given"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:maxLines="2"
+                android:text="@string/book_name"
+                android:textColor="@color/primary_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pay_due_book_name"
+                app:layout_constraintTop_toTopOf="@+id/pay_due_book_name" />
+
+
+            <TextView
+                android:id="@+id/pay_due_borrow_details_return_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/return_date"
+                android:textColor="@color/primary_text"
+                app:layout_constraintStart_toStartOf="@+id/pay_due_book_name"
+                app:layout_constraintTop_toBottomOf="@+id/pay_due_book_name" />
+
+            <TextView
+                android:id="@+id/pay_due_return_date_borrowdetails_given"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/return_date"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/pay_due_borrow_details_return_date"
+                app:layout_constraintStart_toStartOf="@+id/pay_due_borrow_details_book_name_given" />
+
+            <TextView
+                android:id="@+id/pay_due_extra_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/extra_days"
+                android:textColor="@color/primary_text"
+                app:layout_constraintStart_toStartOf="@+id/pay_due_borrow_details_return_date"
+                app:layout_constraintTop_toBottomOf="@+id/pay_due_borrow_details_return_date" />
+
+            <TextView
+                android:id="@+id/pay_due_extra_days_given"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/pay_due_extra_days"
+                app:layout_constraintStart_toStartOf="@+id/pay_due_return_date_borrowdetails_given" />
+
+            <TextView
+                android:id="@+id/pay_due_due_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/due_amount"
+                android:textColor="@color/primary_text"
+                app:layout_constraintStart_toStartOf="@+id/pay_due_extra_days"
+                app:layout_constraintTop_toBottomOf="@+id/pay_due_extra_days" />
+
+            <TextView
+                android:id="@+id/pay_due_due_amount_given"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textColor="@color/primary_text"
+                app:layout_constraintBottom_toBottomOf="@+id/pay_due_due_amount"
+                app:layout_constraintStart_toStartOf="@+id/pay_due_extra_days_given" />
+
+            <TextView
+                android:id="@+id/pay_due_cancel"
+                android:layout_width="149dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="@string/cancel_button"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pay_due_due_amount" />
+
+            <TextView
+                android:id="@+id/pay_due_pay"
+                android:layout_width="149dp"
+                android:layout_height="0dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="@string/pay_due_button"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/pay_due_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pay_due_cancel"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

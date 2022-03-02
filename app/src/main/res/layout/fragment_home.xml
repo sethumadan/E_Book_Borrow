@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        tools:context=".ui.fragments.HomeFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="@+id/balance_card"
+                app:layout_constraintStart_toStartOf="@+id/balance_card"
+                app:layout_constraintTop_toBottomOf="@+id/balance_card">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/borrowed_book_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/borrowed_books" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/due_book_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/borrowed_book_image"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/duebooks" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shared_books_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/due_book_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/due_book_image"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/share_book" />
+
+                <TextView
+                    android:id="@+id/borrowed_book_image_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/borrowed_books_home"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/primary_text"
+                    app:layout_constraintEnd_toEndOf="@+id/borrowed_book_image"
+                    app:layout_constraintStart_toStartOf="@+id/borrowed_book_image"
+                    app:layout_constraintTop_toBottomOf="@+id/borrowed_book_image" />
+
+                <TextView
+                    android:id="@+id/due_books_image_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/due_books_home"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/primary_text"
+                    app:layout_constraintBottom_toBottomOf="@+id/borrowed_book_image_text"
+                    app:layout_constraintEnd_toEndOf="@+id/due_book_image"
+                    app:layout_constraintStart_toStartOf="@+id/due_book_image"
+                    app:layout_constraintTop_toTopOf="@+id/borrowed_book_image_text" />
+
+                <TextView
+                    android:id="@+id/shared_books_image_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/shared_books_home"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/primary_text"
+                    app:layout_constraintBottom_toBottomOf="@+id/due_books_image_text"
+                    app:layout_constraintEnd_toEndOf="@+id/shared_books_image"
+                    app:layout_constraintStart_toStartOf="@+id/shared_books_image"
+                    app:layout_constraintTop_toTopOf="@+id/due_books_image_text" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/favourites_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="36dp"
+                    app:layout_constraintStart_toStartOf="@+id/borrowed_book_image"
+                    app:layout_constraintTop_toBottomOf="@+id/borrowed_book_image_text"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/favorites" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/all_books_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintStart_toStartOf="@+id/due_book_image"
+                    app:layout_constraintTop_toTopOf="@+id/favourites_image"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/book" />
+
+                <TextView
+                    android:id="@+id/favorite_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="@string/favourite_books_home"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/primary_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/favourites_image"
+                    app:layout_constraintStart_toStartOf="@+id/favourites_image"
+                    app:layout_constraintTop_toBottomOf="@+id/favourites_image" />
+
+                <TextView
+                    android:id="@+id/all_books_image_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/see_all_books"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/primary_text"
+                    app:layout_constraintEnd_toEndOf="@+id/all_books_image"
+                    app:layout_constraintStart_toStartOf="@+id/all_books_image"
+                    app:layout_constraintTop_toBottomOf="@+id/all_books_image" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/popular_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:layout_constraintStart_toStartOf="@+id/shared_books_image"
+                    app:layout_constraintTop_toTopOf="@+id/all_books_image"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/commonlyborrowed" />
+
+                <TextView
+                    android:id="@+id/popular_book_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/mostly_borrowed_home"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/primary_text"
+                    app:layout_constraintEnd_toEndOf="@+id/popular_image"
+                    app:layout_constraintStart_toStartOf="@+id/popular_image"
+                    app:layout_constraintTop_toBottomOf="@+id/popular_image" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/a_book_day_keeps_reality_away"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/header"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_baseline_local_library_24" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/header"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_baseline_local_library_24" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView14"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="40dp"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView13"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/share_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/sharebooks" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/return_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/return_book" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/borrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/borrow_home"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+            <TextView
+                android:id="@+id/return_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/return_home"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/borrow"
+                app:layout_constraintEnd_toEndOf="@+id/cardView13"
+                app:layout_constraintStart_toStartOf="@+id/cardView13"
+                app:layout_constraintTop_toBottomOf="@+id/cardView13" />
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/share_home"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/return_text"
+                app:layout_constraintEnd_toEndOf="@+id/cardView14"
+                app:layout_constraintStart_toStartOf="@+id/cardView14"
+                app:layout_constraintTop_toBottomOf="@+id/cardView14" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/borrow_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/borrow" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/balance_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/borrow">
+
+                <TextView
+                    android:id="@+id/no_due"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:background="@color/background"
+                    android:gravity="center"
+                    android:text="@string/no_due_at_present"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/has_balance_amomt_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/pay_due"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/balance_due_amount"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/due_given"
+                        android:layout_width="40dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/zero"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/pay_due"
+                        app:layout_constraintStart_toEndOf="@+id/pay_due"
+                        app:layout_constraintTop_toTopOf="@+id/pay_due"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/pay_due_click"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:text="@string/pay_now"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                            android:textColor="@color/primary_text"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

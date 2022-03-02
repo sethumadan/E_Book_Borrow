@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.SignUpFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/password"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/hint_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_no_top_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/confirm_password"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirm_password_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/confirm_password"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/hint_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_top_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/district_top_layout"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile_no_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/mobile_no"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_name_top_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:nextFocusDown="@id/password_top_layout"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_name_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/name"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="text"
+                    android:nextFocusDown="@id/mobile_no_top_layout"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/days_one"
+                android:text="@string/sign_up_header"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/sign_up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pin_code_top_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/street_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/street_village"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView5"
+                app:layout_constraintStart_toStartOf="@+id/cardView5"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/street"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="text"
+                    android:nextFocusDown="@id/pin_code_top_layout"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/district_top_layout"
+                style="@style/CustomOutlineBoxDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="@string/district"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:endIconTint="@color/primary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/street_top_layout">
+
+                <AutoCompleteTextView
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:nextFocusDown="@id/door_no_top_layout"
+                    android:textColor="@color/primary_text"
+                    android:textColorHint="@color/hint_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pin_code_top_layout"
+                style="@style/CustomOutlineBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="@string/pincode"
+                android:textColorHint="@color/hint_color"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/district_top_layout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pin_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number|text"
+                    android:maxLength="6"
+                    android:nextFocusDown="@id/sign_up"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address Details"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                app:layout_constraintStart_toStartOf="@+id/cardView5" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="32dp"
+                android:scrollbarThumbHorizontal="@color/transparent"
+                android:scrollbarThumbVertical="@color/transparent"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_password_top_layout">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/land_mark_top_layout"
+                        style="@style/CustomOutlineBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:hint="@string/landmark"
+                        android:textColorHint="@color/hint_color"
+                        app:boxStrokeWidth="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/door_no_top_layout"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/land_mark"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:inputType="text"
+                            android:nextFocusDown="@id/pin_code_top_layout"
+                            android:padding="8dp"
+                            android:textColor="@color/primary_text"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/door_no_top_layout"
+                        style="@style/CustomOutlineBox"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/door_no"
+                        android:textColorHint="@color/hint_color"
+                        app:boxStrokeWidth="2dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/door_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:inputType="text"
+                            android:nextFocusDown="@id/pin_code_top_layout"
+                            android:padding="8dp"
+                            android:textColor="@color/primary_text"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

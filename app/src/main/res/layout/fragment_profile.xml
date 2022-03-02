@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.ProfileFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/primary_text"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mobile_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/mobile_no"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/name_profile"
+                app:layout_constraintStart_toStartOf="@+id/name_profile"
+                app:layout_constraintTop_toBottomOf="@+id/name_profile" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/profile_card_back_ground"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mobile_profile">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/no_of_borrows_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/borrowed"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/borrowed_given_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/primary_text"
+                        android:textSize="40sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no_of_borrows_profile"
+                        app:layout_constraintEnd_toEndOf="@+id/no_of_borrows_profile"
+                        app:layout_constraintStart_toStartOf="@+id/no_of_borrows_profile" />
+
+                    <TextView
+                        android:id="@+id/no_of_shared_books_profle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="68dp"
+                        android:text="@string/shared"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/no_of_borrows_profile"
+                        app:layout_constraintStart_toEndOf="@+id/no_of_borrows_profile"
+                        app:layout_constraintTop_toTopOf="@+id/no_of_borrows_profile"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/shared_given_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/primary_text"
+                        android:textSize="40sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no_of_shared_books_profle"
+                        app:layout_constraintEnd_toEndOf="@+id/no_of_shared_books_profle"
+                        app:layout_constraintStart_toStartOf="@+id/no_of_shared_books_profle" />
+
+                    <TextView
+                        android:id="@+id/no_of_due_book_prfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/due_book"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/no_of_shared_books_profle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/no_of_shared_books_profle"
+                        app:layout_constraintTop_toTopOf="@+id/no_of_shared_books_profle"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/due_book_given_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/primary_text"
+                        android:textSize="40sp"
+                        app:layout_constraintBottom_toTopOf="@+id/no_of_due_book_prfile"
+                        app:layout_constraintEnd_toEndOf="@+id/no_of_due_book_prfile"
+                        app:layout_constraintStart_toStartOf="@+id/no_of_due_book_prfile" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/due_card_profile"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/profile_card_back_ground"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/due_amount_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/due_amount_semi_colon"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/due_amounta_given_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/zero"
+                        android:textColor="@color/primary_text"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/due_amount_profile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/due_amount_profile"
+                        app:layout_constraintTop_toTopOf="@+id/due_amount_profile" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/favorites_card_profile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/profile_card_back_ground"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/due_card_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/due_card_profile"
+                app:layout_constraintTop_toTopOf="@+id/due_card_profile">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/favourites_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/favourites_semi_colon"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/favourites_given_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/zero"
+                        android:textColor="@color/primary_text"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/favourites_profile"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/your_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_activity"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cardView4"
+                app:layout_constraintStart_toStartOf="@+id/cardView4" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/profile_card_back_ground"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logout" />
+
+                    <TextView
+                        android:id="@+id/logout_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:text="@string/logout"
+                        android:textColor="@color/primary_text"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/logout_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/logout"
+                app:layout_constraintStart_toStartOf="@+id/logout" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="@color/profile_card_back_ground"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/due_card_profile">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/edit_profile"
+                        android:textColor="@color/primary_text"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_baseline_edit_24" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/edit_headera_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/edit_profile"
+                app:layout_constraintStart_toStartOf="@+id/edit_profile" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mobile_profile"
+                app:layout_constraintEnd_toStartOf="@+id/mobile_profile"
+                app:layout_constraintTop_toTopOf="@+id/mobile_profile"
+                app:srcCompat="@drawable/ic_baseline_phone_android_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
